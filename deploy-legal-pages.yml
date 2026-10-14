@@ -1,0 +1,73 @@
+name: Deploy legal pages to GitHub Pages
+
+# Publishes the static legal pages (privacy.html, delete-account.html, index.html)
+# to GitHub Pages using the official Pages actions.
+#
+# Triggers:
+#   * push to the default branch (main or master) when a page or asset changes
+#   * manual run from the Actions tab ("Run workflow")
+#
+# Repository setting required once: Settings -> Pages -> Source = "GitHub Actions".
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "*.html"
+      - "assets/**"
+      - ".github/workflows/deploy-legal-pages.yml"
+  workflow_dispatch:
+
+# Allow the workflow to publish to Pages via OIDC.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one Pages deployment at a time; do not cancel an in-flight deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build site artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Stage static site
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          cp ./*.html _site/
+          if [ -d assets ]; then
+            cp -R assets _site/assets
+          fi
+          echo "Staged files:"
+          find _site -type f | sort
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+          retention-days: 1
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
