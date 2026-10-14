@@ -1,0 +1,7 @@
+# Agent / sandbox working directory — never publish
+.cline-home/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
