@@ -60,12 +60,24 @@ Until the file is moved into place, **no Pages deployment will run**. Install it
 
 **Option 1 — GitHub web UI (no local clone needed)**
 
-1. Open <https://github.com/Senj1u/Kliniko/blob/main/deploy-legal-pages.yml> and copy the contents.
+1. Open <https://github.com/Senj1u/Kliniko/blob/cline/1mx94nea/deploy-legal-pages.yml> and click
+   **Copy raw file**. (The root copy on `main` also works, but it still carries the old
+   `main`/`master` branch filter. The branch copy is branch-agnostic, so it triggers the run even if
+   the file lands on the default branch by mistake — prefer it.)
 2. In the repository, choose **Add file → Create new file**.
 3. Enter the file name `.github/workflows/deploy-legal-pages.yml` (typing `/` creates the folders)
    and paste the contents.
-4. Commit directly to `main`. The workflow runs automatically on that commit.
-5. Optionally delete the root-level `deploy-legal-pages.yml` afterwards.
+4. Switch the branch selector to **`main`** before committing.
+5. Commit directly to `main`. The workflow runs automatically on that commit.
+6. Optionally delete the root-level `deploy-legal-pages.yml` afterwards.
+
+Sanity-check the paste before committing. The reviewed file is **74 lines / 1986 bytes**, its last
+line must be `        uses: actions/deploy-pages@v5`, and its git blob SHA is
+`7ec1da88c06d181773d20c796c371a4e864490e4` — `git hash-object .github/workflows/deploy-legal-pages.yml`
+should print that value for a byte-exact copy.
+
+The `on.push.paths` filter already lists `.github/workflows/deploy-legal-pages.yml`, so the very
+commit that adds the file satisfies the filter and starts the run on its own.
 
 **Option 2 — command line (requires the `workflows` permission)**
 
