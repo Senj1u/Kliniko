@@ -65,10 +65,10 @@ Reinstall it the same way if it is ever lost:
 
 **Option 1 — GitHub web UI (no local clone needed)**
 
-1. Open <https://github.com/Senj1u/Kliniko/blob/cline/1mx94nea/deploy-legal-pages.yml> and click
-   **Copy raw file**. (The root copy on `main` also works, but it still carries the old
-   `main`/`master` branch filter. The branch copy is branch-agnostic, so it triggers the run even if
-   the file lands on the default branch by mistake — prefer it.)
+1. Open <https://github.com/Senj1u/Kliniko/blob/main/.github/workflows/deploy-legal-pages.yml> and
+   click **Copy raw file** (if that copy is already gone, use the root-level
+   `deploy-legal-pages.yml`, which is the older variant that still carries a `main`/`master` branch
+   filter — it works, but only for pushes to `main`).
 2. In the repository, choose **Add file → Create new file**.
 3. Enter the file name `.github/workflows/deploy-legal-pages.yml` (typing `/` creates the folders)
    and paste the contents.
