@@ -1,389 +1,674 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy &mdash; Kliniko</title>
-  <meta name="description" content="Privacy Policy for the Kliniko app: what data we collect, how we use and share it, how long we keep it, and your rights." />
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy policy for the Kliniko medicine reminder app.">
+    <meta name="color-scheme" content="light">
+    <title>Kliniko Privacy Policy</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1b2524;
+        background: #f2f5f4;
+        line-height: 1.65;
+      }
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span class="brand-name">Kliniko</span>
-      </a>
-      <nav class="site-nav" aria-label="Legal documents">
-        <a href="privacy.html" aria-current="page">Privacy Policy</a>
-        <a href="delete-account.html">Delete Account</a>
-      </nav>
-    </div>
-  </header>
+      body {
+        margin: 0;
+      }
 
-  <main id="main" class="wrap">
-    <h1>Privacy Policy</h1>
-    <p class="lede">
-      This Privacy Policy explains how the <strong>Kliniko</strong> application ("the App",
-      "we", "us") collects, uses, shares, stores and protects information when you use the App.
-    </p>
+      main {
+        box-sizing: border-box;
+        width: min(100% - 32px, 820px);
+        margin: 32px auto;
+        padding: clamp(22px, 5vw, 48px);
+        background: #fff;
+        border: 1px solid #8fa39f;
+        border-radius: 22px;
+      }
 
-    <div class="meta">
+      h1,
+      h2 {
+        line-height: 1.25;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 6vw, 2.8rem);
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.35rem;
+      }
+
+      a {
+        color: #075651;
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.15em;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #075651;
+        outline-offset: 3px;
+      }
+
+      .notice {
+        padding: 16px;
+        border: 2px solid #6f8682;
+        border-radius: 12px;
+        background: #e7f0ee;
+      }
+
+      .updated {
+        color: #3a4644;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #8fa39f;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="assets/icon.png" alt="Kliniko" width="64" height="64" style="display:block;margin:0 auto 12px;border-radius:14px;">
+        <h1>Kliniko Privacy Policy</h1>
+        <p class="updated">
+          <strong>Effective date:</strong> 12 October 2026<br>
+          <strong>Last updated:</strong> 15 October 2026
+        </p>
+      </header>
+
+      <h2>1. Introduction</h2>
       <p>
-        <strong>Effective date:</strong> October 14, 2026 &nbsp;&middot;&nbsp;
-        <strong>Last updated:</strong> October 14, 2026
+        Kliniko ("Kliniko", "we", "our", or "us") is a medication management
+        application designed to help users organize medicines, manage
+        medication reminders, review dose history, and maintain personal
+        health-related records.
       </p>
-    </div>
+      <p>
+        This Privacy Policy explains how Kliniko handles information when you
+        use the application, including information stored on your device and
+        information processed by third-party services when you choose to use
+        features that require them.
+      </p>
+      <p>
+        We aim to minimize unnecessary collection of personal information and
+        to keep medication and health-related data under your control on your
+        device wherever the application architecture permits.
+      </p>
+      <p>
+        By using Kliniko, you acknowledge that you have read this policy. Where
+        applicable law requires consent for a particular processing activity,
+        we will seek that consent separately.
+      </p>
 
-    <nav class="toc" aria-labelledby="toc-heading">
-      <h2 id="toc-heading">Contents</h2>
-      <ol>
-        <li><a href="#who-we-are">Who we are and scope</a></li>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#collect">Information we collect</a></li>
-        <li><a href="#use">How we use information</a></li>
-        <li><a href="#legal-bases">Legal bases for processing</a></li>
-        <li><a href="#sharing">How we share information</a></li>
-        <li><a href="#cookies">Cookies and similar technologies</a></li>
-        <li><a href="#retention">How long we keep information</a></li>
-        <li><a href="#security">How we protect information</a></li>
-        <li><a href="#rights">Your rights and choices</a></li>
-        <li><a href="#deletion">Account and data deletion</a></li>
-        <li><a href="#children">Children's privacy</a></li>
-        <li><a href="#transfers">International data transfers</a></li>
-        <li><a href="#third-parties">Third-party services and links</a></li>
-        <li><a href="#changes">Changes to this policy</a></li>
-        <li><a href="#contact">How to contact us</a></li>
-      </ol>
-    </nav>
+      <h2>2. Information We Handle</h2>
+      <p>
+        The information handled by Kliniko depends on which features you use.
+      </p>
 
-    <h2 id="who-we-are">1. Who we are and scope</h2>
-    <p>
-      Kliniko is a mobile application. This policy applies to the App and to this legal pages
-      website (together, the "Services"). It does not apply to any third-party websites, apps or
-      services you may reach through the Services, which are governed by their own privacy
-      policies.
-    </p>
-    <p>
-      Kliniko is an independent project maintained by the developer identified in the
-      <a href="https://github.com/Senj1u" rel="noopener">project's GitHub account</a>. Where this
-      policy refers to "we", "us" or "our", it means that developer, who acts as the data
-      controller (or equivalent term under your local law) for the information described below.
-    </p>
-
-    <h2 id="summary">2. Summary</h2>
-    <ul>
-      <li>We collect the information you provide when you create an account and use the App, plus
-        limited technical information generated automatically by your device.</li>
-      <li>We use that information to operate, maintain, secure and improve the App.</li>
-      <li>We do not sell your personal information, and we do not share it for cross-context
-        behavioural advertising.</li>
-      <li>We share information only with service providers that help us run the App, or where the
-        law requires it.</li>
-      <li>You can request access to, correction of, or deletion of your information, and you can
-        delete your account at any time &mdash; see
-        <a href="delete-account.html">Account &amp; Data Deletion</a>.</li>
-    </ul>
-    <p class="muted">
-      This summary is provided for convenience only. The full sections below are the binding
-      description of our practices.
-    </p>
-
-    <h2 id="collect">3. Information we collect</h2>
-
-    <h3>3.1 Information you provide directly</h3>
-    <ul>
-      <li><strong>Account details</strong> &mdash; such as your name, username, email address and
-        authentication credentials. Passwords are stored only in hashed form, or are handled
-        entirely by the sign-in provider you choose.</li>
-      <li><strong>Profile details</strong> &mdash; any optional information you choose to add to your
-        profile, such as a photo, date of birth or contact details.</li>
-      <li><strong>Content you enter</strong> &mdash; information, notes, records, appointments,
-        messages or other content you create, upload or submit while using the App.</li>
-      <li><strong>Support communications</strong> &mdash; the content of messages you send us when you
-        request help, report a problem or otherwise contact us.</li>
-    </ul>
-
-    <h3>3.2 Information collected automatically</h3>
-    <ul>
-      <li><strong>Device and technical data</strong> &mdash; device model, operating system and
-        version, app version, language, time zone, and coarse region (for example, derived from an
-        IP address at city or country level).</li>
-      <li><strong>Usage data</strong> &mdash; which screens or features you use, timestamps, and
-        in-app events, collected in aggregate or pseudonymised form.</li>
-      <li><strong>Diagnostics</strong> &mdash; crash reports and performance data that help us find
-        and fix defects.</li>
-    </ul>
-
-    <h3>3.3 Information from third parties</h3>
-    <p>
-      If you sign in using a third-party account (for example, Google or Apple sign-in), we receive
-      basic profile information from that provider &mdash; such as your name, email address and an
-      account identifier &mdash; in accordance with the permissions you grant.
-    </p>
-
-    <h3>3.4 Information we do not ask for</h3>
-    <p>
-      We do not ask you to submit government identification numbers, financial account numbers or
-      precise real-time location. Please do not include such information in free-text fields, and do
-      not submit information about other people unless you have their permission to do so.
-    </p>
-
-    <h2 id="use">4. How we use information</h2>
-    <p>We use the information described above to:</p>
-    <ul>
-      <li>create and manage your account and provide the core features of the App;</li>
-      <li>personalise your experience and remember your preferences;</li>
-      <li>operate, maintain, troubleshoot and secure the Services, and detect, prevent and address
-        fraud, abuse or security incidents;</li>
-      <li>understand how the App is used so that we can improve it and develop new features;</li>
-      <li>communicate with you about service messages, updates, and responses to your requests;</li>
-      <li>comply with applicable legal obligations and enforce our terms.</li>
-    </ul>
-    <p>
-      We do not use your information to make decisions that produce legal effects about you, and we
-      do not use it for automated profiling for advertising purposes.
-    </p>
-
-    <h2 id="legal-bases">5. Legal bases for processing</h2>
-    <p>
-      If you are in the European Economic Area, the United Kingdom or Switzerland, we process your
-      personal data on the following legal bases:
-    </p>
-    <ul>
-      <li><strong>Performance of a contract</strong> &mdash; to provide the App and the features you
-        request, and to manage your account.</li>
-      <li><strong>Legitimate interests</strong> &mdash; to keep the Services secure, prevent abuse,
-        and improve and develop the App, balanced against your rights and expectations.</li>
-      <li><strong>Consent</strong> &mdash; where we ask for it, for example for optional
-        communications or device permissions. You may withdraw consent at any time.</li>
-      <li><strong>Legal obligation</strong> &mdash; where we must retain or disclose information to
-        comply with the law.</li>
-    </ul>
-
-    <h2 id="sharing">6. How we share information</h2>
-    <p>
-      <strong>We do not sell your personal information</strong>, and we do not share it with third
-      parties for their own advertising purposes. We share information only in the following
-      circumstances:
-    </p>
-    <ul>
-      <li><strong>Service providers.</strong> Vendors that help us run the Services, such as cloud
-        hosting and storage, authentication, crash reporting, analytics, email delivery and customer
-        support tooling. They may access information only to perform services for us and are bound
-        by contractual confidentiality and data protection obligations.</li>
-      <li><strong>Legal and safety.</strong> Where we believe in good faith that disclosure is
-        required by law, legal process or a governmental request, or is necessary to protect the
-        rights, property or safety of users, the public or us.</li>
-      <li><strong>Business changes.</strong> If the project is reorganised, transferred or merged,
-        information may be transferred as part of that transaction. We will notify you of any change
-        in ownership or of a material change to this policy.</li>
-      <li><strong>With your direction or consent.</strong> For example, if you use a feature that
-        shares content with other users or to a third-party service you select.</li>
-    </ul>
-    <p>
-      Aggregated or de-identified information that cannot reasonably be used to identify you may be
-      shared for research, analytics or product improvement.
-    </p>
-
-    <h2 id="cookies">7. Cookies and similar technologies</h2>
-    <p>
-      This legal pages website is a set of static pages and does not set cookies of its own and does
-      not run advertising or third-party tracking scripts. The App may use local storage or similar
-      on-device technologies to keep you signed in, remember preferences and cache content. Where
-      the App uses an analytics or crash-reporting service, that service may collect the technical
-      and usage data described in section 3.2.
-    </p>
-    <p>
-      You can limit or reset identifiers through your device settings (for example, by resetting your
-      advertising identifier or restricting tracking in your operating system's privacy settings).
-    </p>
-
-    <h2 id="retention">8. How long we keep information</h2>
-    <p>
-      We keep personal information only for as long as necessary for the purposes described in this
-      policy, and then delete or de-identify it. Retention periods depend on the type of information
-      and the reason we hold it:
-    </p>
-    <table>
-      <caption>Indicative retention periods</caption>
-      <thead>
-        <tr>
-          <th scope="col">Category</th>
-          <th scope="col">Typical retention</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Account and profile information</td>
-          <td>While your account is active, and deleted or de-identified within 30 days of a
-            verified account deletion request (subject to section 11).</td>
-        </tr>
-        <tr>
-          <td>Content you created in the App</td>
-          <td>While your account is active; deleted with your account, unless you delete it earlier.</td>
-        </tr>
-        <tr>
-          <td>Usage and analytics data</td>
-          <td>Up to 26 months, in aggregate or pseudonymised form.</td>
-        </tr>
-        <tr>
-          <td>Crash and diagnostic logs</td>
-          <td>Up to 90 days.</td>
-        </tr>
-        <tr>
-          <td>Support correspondence</td>
-          <td>Up to 24 months after the request is resolved.</td>
-        </tr>
-        <tr>
-          <td>Records we must keep by law</td>
-          <td>For the period required by applicable law (for example, tax or accounting records).</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      Residual copies may remain in encrypted backups for a limited period before they are
-      overwritten in the normal course of our backup cycle.
-    </p>
-
-    <h2 id="security">9. How we protect information</h2>
-    <p>
-      We use technical and organisational measures designed to protect information against
-      unauthorised access, loss, misuse or alteration. These include encryption in transit
-      (HTTPS/TLS), access controls that limit who can reach production data, hashed storage of
-      passwords, and logging and monitoring for suspicious activity.
-    </p>
-    <p>
-      No method of transmission or storage is completely secure. We cannot guarantee absolute
-      security, so please choose a strong, unique password and keep your credentials private. If we
-      become aware of a breach that affects your personal information, we will notify you and the
-      relevant authorities as required by law.
-    </p>
-
-    <h2 id="rights">10. Your rights and choices</h2>
-    <p>
-      Depending on where you live, you may have some or all of the following rights in relation to
-      your personal information:
-    </p>
-    <ul>
-      <li><strong>Access</strong> &mdash; to confirm whether we process your information and obtain a
-        copy of it.</li>
-      <li><strong>Correction</strong> &mdash; to have inaccurate or incomplete information corrected.
-        Much of this you can do yourself in the App.</li>
-      <li><strong>Deletion</strong> &mdash; to have your information erased. See
-        <a href="delete-account.html">Account &amp; Data Deletion</a>.</li>
-      <li><strong>Portability</strong> &mdash; to receive the information you provided in a
-        structured, commonly used, machine-readable format.</li>
-      <li><strong>Objection and restriction</strong> &mdash; to object to, or ask us to restrict,
-        certain processing, including processing based on legitimate interests.</li>
-      <li><strong>Withdraw consent</strong> &mdash; where processing is based on consent, to withdraw
-        it at any time, without affecting the lawfulness of processing already carried out.</li>
-      <li><strong>Non-discrimination</strong> &mdash; not to be treated differently for exercising
-        your privacy rights.</li>
-    </ul>
-    <p>
-      To exercise a right, contact us using the details in section 16. We may ask you to verify your
-      identity before acting on a request. We will respond within the timeframe required by
-      applicable law (typically 30 days). You also have the right to lodge a complaint with your
-      local data protection authority.
-    </p>
-
-    <h2 id="deletion">11. Account and data deletion</h2>
-    <p>
-      You can request deletion of your account and the personal data associated with it at any time.
-      Step-by-step instructions, including what is deleted and what may be retained, are published
-      separately at
-      <a href="delete-account.html">Account &amp; Data Deletion</a>.
-    </p>
-    <p>
-      When we receive a verified deletion request, we delete or de-identify the associated personal
-      information within 30 days, except where we are required or permitted by law to retain
-      specific records, or where limited information must be kept to prevent fraud and abuse or to
-      resolve open disputes. Any such retained data is kept only for the period required and is not
-      used for any other purpose.
-    </p>
-
-    <h2 id="children">12. Children's privacy</h2>
-    <p>
-      The Services are not directed to children under 13 (or under the minimum age of digital
-      consent in your country, which may be up to 16). We do not knowingly collect personal
-      information from children below that age. If you believe a child has provided us with personal
-      information, please contact us using the details in section 16 and we will delete it promptly.
-    </p>
-    <p>
-      If the App is made available to minors in a supervised setting, the responsible adult or
-      institution is accountable for obtaining any consent required by local law.
-    </p>
-
-    <h2 id="transfers">13. International data transfers</h2>
-    <p>
-      We may store and process information in countries other than the one in which you live,
-      including countries whose data protection laws differ from your own. Where we transfer personal
-      data out of the European Economic Area, the United Kingdom or Switzerland, we rely on
-      appropriate safeguards such as the European Commission's Standard Contractual Clauses, an
-      adequacy decision, or your consent, and we take steps to ensure your information receives an
-      adequate level of protection.
-    </p>
-    <p>
-      You can ask us for more information about the safeguards we use for international transfers by
-      contacting us using the details in section 16.
-    </p>
-
-    <h2 id="third-parties">14. Third-party services and links</h2>
-    <p>
-      The Services may link to, or integrate with, third-party services &mdash; for example app
-      stores, sign-in providers or hosting providers. Those services are operated by independent
-      companies and are governed by their own privacy policies and terms. We are not responsible for
-      their privacy practices, and we encourage you to review the policies of any third-party service
-      before using it.
-    </p>
-
-    <h2 id="changes">15. Changes to this policy</h2>
-    <p>
-      We may update this policy from time to time to reflect changes in the App, our practices or
-      applicable law. When we make a change, we will revise the "Last updated" date at the top of
-      this page and, where the change is material, provide a more prominent notice (for example, an
-      in-app notice or an email). We encourage you to review this page periodically. Continued use of
-      the Services after an update takes effect means you accept the revised policy.
-    </p>
-    <p>
-      Earlier versions of this policy can be requested using the contact details below.
-    </p>
-
-    <h2 id="contact">16. How to contact us</h2>
-    <p>
-      If you have questions about this policy, or wish to exercise any of your privacy rights, please
-      contact us:
-    </p>
-    <div class="panel">
-      <ul class="link-list">
-        <li><strong>Privacy requests &amp; questions:</strong>
-          <a href="https://github.com/Senj1u/Kliniko/issues" rel="noopener">github.com/Senj1u/Kliniko/issues</a></li>
-        <li><strong>Maintainer:</strong>
-          <a href="https://github.com/Senj1u" rel="noopener">github.com/Senj1u</a></li>
-        <li><strong>Account deletion:</strong>
-          <a href="delete-account.html">see the deletion instructions</a></li>
+      <h3>2.1 Account information</h3>
+      <p>
+        Kliniko uses Firebase Authentication to support account registration,
+        sign-in, and authentication-related account operations. The current
+        version of Kliniko offers email-and-password sign-in only. It does not
+        offer Google, Apple, or any other third-party sign-in. Firebase
+        Authentication processes information such as:
+      </p>
+      <ul>
+        <li>Email address and authentication identifiers (user ID).</li>
+        <li>
+          The display name you enter, which is stored with your Firebase
+          Authentication profile and also cached on the device in encrypted
+          form.
+        </li>
+        <li>
+          Account status and information needed to maintain or verify your
+          authenticated session.
+        </li>
+        <li>
+          Firebase App Check attestation information used to confirm that
+          requests come from a genuine installation of the app.
+        </li>
       </ul>
-      <p class="muted">
-        Please do not include sensitive personal information in a public issue. If your request
-        requires confidential details, say so and we will arrange a private channel.
-      </p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
       <p>
-        <a href="privacy.html">Privacy Policy</a>
-        <span aria-hidden="true">&middot;</span>
-        <a href="delete-account.html">Account &amp; Data Deletion</a>
-        <span aria-hidden="true">&middot;</span>
-        <a href="index.html">Home</a>
+        Your password, where applicable, is managed through Firebase
+        Authentication. Kliniko does not store your plaintext password in its
+        local medication database.
       </p>
-      <p class="muted">Last updated: October 14, 2026</p>
-    </div>
-  </footer>
-</body>
+
+      <h3>2.2 Medication and health information</h3>
+      <p>
+        Kliniko is designed to store medication and health-related information
+        locally on your device. Depending on the features you use, this may
+        include:
+      </p>
+      <ul>
+        <li>Medication names, dosage details, schedules, and reminder settings.</li>
+        <li>Dose history and recorded medication actions.</li>
+        <li>Appointments and prescription-related information.</li>
+        <li>Personal health records and related notes.</li>
+        <li>Other information you choose to enter into the application.</li>
+      </ul>
+      <p>
+        This information may be sensitive. You should protect access to your
+        device and avoid entering information that you do not want stored in
+        the app.
+      </p>
+      <p>
+        The current architecture uses account-scoped local Isar databases on your
+        device. Each signed-in account gets its own local database file. Sensitive
+        local fields and prescription photos are encrypted at rest using a
+        per-account AES-256-GCM key that Kliniko stores in your device's secure
+        key storage. Release builds also block screenshots of the app and disable
+        Android auto-backup of app data. These measures are designed to help
+        separate and protect local user data, but no security measure can
+        guarantee that data on a lost, compromised, or rooted device is
+        unrecoverable by an attacker.
+      </p>
+
+      <h3>2.3 Prescription images and scanned text</h3>
+      <p>
+        If you use medication scanning, you may select or capture a
+        prescription or medicine image. The image is processed on your device
+        using on-device text recognition, and the recognized text is shown to
+        you for review and correction before anything else happens. Temporary
+        working copies of the image are created in the app's private temporary
+        storage during recognition and are deleted after processing.
+      </p>
+      <p>
+        Image selection, local text recognition, and the optional cloud AI step
+        are distinct activities. Text recognition runs entirely on your device.
+        The optional AI step is separate: after you consent and choose to run
+        it, the app sends only the recognized text you reviewed, together with
+        short text fragments derived from that text. The image itself is not
+        uploaded to the AI service.
+      </p>
+      <p>
+        Nothing is sent to the AI service unless you review the recognized text
+        and explicitly choose to use the AI step. If you decline, or if the AI
+        step is unavailable, you can continue by entering or editing the
+        medicine details manually.
+      </p>
+
+      <h3>2.4 Device and application information</h3>
+      <p>
+        Kliniko and its supporting services may process technical information
+        needed for authentication, notification delivery, security,
+        troubleshooting, and service operation. The precise information
+        collected depends on the app version, operating system, Firebase
+        configuration, and any enabled integrations.
+      </p>
+      <p>
+        The current application does not include advertising SDKs, analytics
+        SDKs, or crash-reporting SDKs of its own. If those integrations are ever
+        added, this policy will be updated before release to describe them.
+      </p>
+      <p>
+        Kliniko does include Google-provided libraries: Firebase Authentication,
+        Firebase App Check, Firebase AI Logic, and the on-device ML Kit text
+        recognition library. Like most Google SDKs, these may transmit limited
+        technical and diagnostic information to Google as part of normal service
+        operation, such as app and device identifiers, API usage, and error
+        information. Kliniko does not control the content of that service-level
+        telemetry; Google's processing is governed by the applicable Google and
+        Firebase terms and privacy documentation.
+      </p>
+
+      <h3>2.5 Device permissions and background operation</h3>
+      <p>
+        Kliniko requests Android permissions only for the features it provides:
+      </p>
+      <ul>
+        <li>
+          <strong>Notifications</strong> — to deliver the medication reminders
+          you schedule. Optional. Without it, medicines are still saved locally,
+          but the app reports that reminders are not active.
+        </li>
+        <li>
+          <strong>Alarms and reminders (exact alarms)</strong> — optional, and
+          requested only if you enable the alarm-style reminder. Standard
+          reminders use inexact scheduling and work without this permission.
+        </li>
+        <li>
+          <strong>Camera</strong> — to photograph a medicine label, package, or
+          barcode. Optional; you can enter medicine details manually instead.
+        </li>
+        <li>
+          <strong>Biometric or device-credential authentication</strong> —
+          optional app lock. Verification is performed by your device's
+          operating system; Kliniko does not receive or store your biometric
+          data, fingerprint templates, or device passcode.
+        </li>
+        <li>
+          <strong>Vibration and restart-after-reboot</strong> — used for the
+          alarm ring pattern and to restore scheduled reminders after your
+          device restarts.
+        </li>
+      </ul>
+      <p>
+        To keep future reminders scheduled, Kliniko registers a periodic
+        background task with Android's WorkManager. That task re-establishes the
+        app's sign-in session and refreshes the local notification schedules. It
+        does not transmit your medication or health records.
+      </p>
+
+      <h2>3. Where Information Is Stored</h2>
+
+      <h3>3.1 Local storage</h3>
+      <p>
+        Medication and health-related records are intended to remain in the
+        app's local database on your device. The current architecture uses Isar
+        as its local data store.
+      </p>
+      <p>
+        Kliniko's local-only data architecture does not mean that every feature
+        is offline. Authentication and optional online services may require an
+        internet connection.
+      </p>
+      <p>
+        Information stored locally may be lost if you uninstall the application,
+        clear its data, lose your device, or experience storage corruption.
+        Unless a particular export or backup feature is provided, you should not
+        assume that your records can be recovered from another device.
+      </p>
+
+      <h3>3.2 Firebase Authentication</h3>
+      <p>
+        Firebase Authentication is used to authenticate users. Authentication
+        information is processed by Google Firebase under the applicable service
+        terms and privacy documentation. Review
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+        and the terms that apply to Firebase services for details about Google's
+        processing, security, and retention.
+      </p>
+      <p>
+        The current design does not use Firestore or Firebase Storage as the
+        primary source of truth for medication and health records. This does not
+        guarantee that records uploaded by an earlier app version have been
+        deleted from cloud services.
+      </p>
+
+      <h3>3.3 No automatic cloud synchronization of local records</h3>
+      <p>
+        The current architecture is designed around local storage rather than
+        ongoing synchronization of medication records to Firestore or Firebase
+        Storage.
+      </p>
+      <p>
+        If an earlier version of Kliniko stored information in cloud services,
+        that historical information may remain until it is separately deleted.
+        Deleting local data does not, by itself, delete those historical cloud
+        records.
+      </p>
+
+      <h2>4. Optional AI-Assisted Medication Scanning</h2>
+      <p>
+        Kliniko may offer optional AI-assisted medication scanning through
+        Firebase AI Logic and a Gemini model. If you choose to use this feature:
+      </p>
+      <ul>
+        <li>
+          Information necessary to process the request may be sent to Google's
+          AI services through Firebase AI Logic.
+        </li>
+        <li>
+          When you use the optional AI step, the app sends the text it has
+          already recognized from the image using on-device recognition, along
+          with short text candidates derived from that recognition. The
+          prescription photo itself is not uploaded to the AI service.
+        </li>
+        <li>
+          The service processes the information to generate a response, such as
+          a proposed interpretation of medication details.
+        </li>
+        <li>
+          AI-generated results may be incomplete, inaccurate, ambiguous, or
+          outdated.
+        </li>
+      </ul>
+      <p>
+        Do not submit unrelated personal information or information about another
+        person unless you have the necessary authority and the feature requires
+        it.
+      </p>
+      <p>
+        AI scanning is optional. You can choose not to use it and instead enter
+        or review medication information manually, where manual entry is
+        available. The app asks for your consent before the first AI request and
+        remembers your answer; you can turn the AI step off, or reset that
+        consent so that you are asked again, in the app's Settings under
+        "Privacy &amp; AI".
+      </p>
+      <p>
+        Google's processing of information submitted through its services is also
+        subject to the applicable Google and Firebase terms and privacy
+        documentation. We do not promise that information sent to a third-party
+        AI service is processed exclusively on your device.
+      </p>
+      <p>
+        The AI step uses Firebase AI Logic and a Gemini model. Google's handling
+        of the text you submit is subject to the applicable Google and Firebase
+        terms and privacy documentation.
+      </p>
+
+      <h2>5. Prescription Photos and Telegram</h2>
+      <p>
+        Kliniko may provide a feature that allows you to send a prescription
+        image and associated information to Telegram.
+      </p>
+      <p>
+        Where this feature is enabled, the intended workflow requires you to
+        review the information and explicitly choose to send it before the
+        transmission takes place. A preview or review screen is not, by itself,
+        permission to transmit information.
+      </p>
+      <p>If you confirm the send action:</p>
+      <ul>
+        <li>
+          The selected image and associated message content may be transmitted
+          through the configured Telegram integration.
+        </li>
+        <li>
+          The integration may process the request through a server-side proxy
+          before delivering it to Telegram.
+        </li>
+        <li>
+          Telegram and the recipient account or chat may receive or retain the
+          information according to their own systems, settings, and policies.
+        </li>
+      </ul>
+      <p>
+        Prescription images can contain sensitive medical and personal
+        information. Review the destination and contents carefully before
+        sending. Do not send another person's prescription without appropriate
+        authority.
+      </p>
+      <p>
+        Telegram transmission is a separate activity from local storage and
+        optional AI scanning. Consent to one activity should not be treated as
+        consent to another.
+      </p>
+      <p>
+        The Telegram feature is optional and only works when a Telegram
+        destination has been configured for the app. Transmission uses an HTTPS
+        connection to a Kliniko-operated relay, which then delivers the
+        prescription to the configured Telegram destination. If no destination
+        is configured, the app does not offer the send action.
+      </p>
+
+      <h2>6. Medication Reminders and Notifications</h2>
+      <p>
+        Kliniko may schedule local notifications to remind you about medication
+        times and related actions. To provide this functionality, the
+        application may store reminder settings and schedule notification
+        requests through the operating system.
+      </p>
+      <p>
+        Notification delivery depends on device permissions, operating-system
+        behavior, power management, device state, and other technical
+        conditions. Notifications may be delayed, suppressed, missed, or
+        canceled.
+      </p>
+      <p>
+        Kliniko does not guarantee that every reminder will be delivered or that
+        you will take a medication at the scheduled time. You remain responsible
+        for following the instructions provided by your healthcare professional.
+      </p>
+
+      <h2>7. How Information Is Used</h2>
+      <p>Depending on the feature, Kliniko may process information to:</p>
+      <ul>
+        <li>Authenticate your account.</li>
+        <li>Store and display the medication and health information you enter.</li>
+        <li>Schedule and manage medication reminders.</li>
+        <li>Record and display dose history.</li>
+        <li>
+          Provide medication scanning and interpretation when you choose to use
+          optional AI.
+        </li>
+        <li>
+          Support prescription transmission when you explicitly confirm a
+          supported Telegram send action.
+        </li>
+        <li>Maintain application security and respond to technical failures.</li>
+        <li>Perform account deletion and local data cleanup.</li>
+        <li>Comply with applicable legal obligations.</li>
+      </ul>
+      <p>
+        We do not state that local medication records are used for advertising or
+        sold to advertisers. Any future analytics, advertising, or additional
+        data-sharing functionality should be reflected accurately in an updated
+        policy before release.
+      </p>
+
+      <h2>8. Sharing and Disclosure</h2>
+      <p>
+        Kliniko does not require cloud synchronization of local medication
+        records as its primary data architecture. However, information may be
+        shared with a service when you use a feature that requires it. Relevant
+        service providers may include:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Firebase Authentication</strong>, for account
+          authentication.
+        </li>
+        <li>
+          <strong>Firebase AI Logic and Gemini</strong>, when you choose optional
+          cloud AI scanning.
+        </li>
+        <li>
+          <strong>OpenFDA (api.fda.gov)</strong>, when you use the "Check
+          OpenFDA reference" button on the medicine form, which sends the
+          medicine name you typed, or when you scan a barcode, which sends the
+          scanned barcode value, to query the U.S. Food and Drug
+          Administration's public OpenFDA drug-label API. Only that value is
+          sent; no account, health-record, or dose-history information is
+          included in the request.
+        </li>
+        <li>
+          <strong>Telegram</strong>, when you explicitly confirm sending a
+          prescription image through an enabled integration.
+        </li>
+        <li>
+          <strong>Infrastructure or technical service providers</strong>, if used
+          to operate an enabled feature.
+        </li>
+      </ul>
+      <p>
+        We may also disclose information where required by applicable law or
+        where reasonably necessary to protect the security and integrity of the
+        application, subject to applicable legal requirements.
+      </p>
+
+      <h2>9. Retention and Deletion</h2>
+
+      <h3>9.1 Local data</h3>
+      <p>
+        Local medication and health data may remain on your device until you
+        delete it, clear the app's data, uninstall the application, or use a
+        feature that removes the relevant records.
+      </p>
+      <p>
+        Kliniko's account-deletion workflow removes the signed-in account's
+        local data first, including the account-scoped local database,
+        prescription photos, account-specific preferences, and the local
+        encryption key. If a local cleanup step fails, the app reports which step
+        failed and does not delete the Firebase sign-in account.
+      </p>
+
+      <h3>9.2 Firebase Authentication account deletion</h3>
+      <p>
+        After local cleanup succeeds, the app attempts to delete the Firebase
+        Authentication account. Authentication deletion may fail, for example,
+        if reauthentication is required or the network is unavailable.
+      </p>
+      <p>
+        Consequently, local data cleanup and Firebase account deletion are
+        separate operations. Successful local cleanup does not guarantee
+        successful deletion of the authentication account.
+      </p>
+
+      <h3>9.3 Historical cloud records</h3>
+      <p>
+        Older records stored in Firestore, Firebase Storage, or other cloud
+        services by earlier app versions may remain after account deletion. The
+        current local-only deletion workflow does not automatically guarantee
+        their removal.
+      </p>
+      <p>
+        If historical cloud data exists, it may require a separate deletion
+        process. Contact
+        <a href="mailto:klinikoapp@gmail.com">klinikoapp@gmail.com</a> for
+        assistance or questions about applicable deletion rights.
+      </p>
+
+      <h3>9.4 Third-party retention</h3>
+      <p>
+        Information submitted to Google, Telegram, or another third-party service
+        may be subject to that provider's retention, deletion, security, and
+        legal requirements. Deleting Kliniko or your Firebase Authentication
+        account does not necessarily remove information already received by
+        those services.
+      </p>
+
+      <h3>9.5 Legacy unscoped local database</h3>
+      <p>
+        Some devices may contain a legacy local database that was created before
+        account-scoped storage existed. Because its records cannot be reliably
+        attributed to a specific signed-in account, Kliniko intentionally does
+        not open, import, or delete that legacy database. It is left untouched
+        during normal use and during account deletion.
+      </p>
+
+      <h2>10. Security</h2>
+      <p>
+        We use the application's available technical safeguards to help protect
+        information, including account-scoped local storage and encryption.
+      </p>
+      <p>
+        No application, device, database, or transmission method can be
+        guaranteed completely secure. Your device security, operating-system
+        configuration, account credentials, and permissions may affect the
+        protection of your information.
+      </p>
+      <p>
+        Do not share your password, unlock credentials, or other
+        security-sensitive information with anyone.
+      </p>
+
+      <h2>11. Your Privacy Rights</h2>
+      <p>
+        Depending on your location and applicable law, you may have rights to:
+      </p>
+      <ul>
+        <li>Request access to personal information about you.</li>
+        <li>Request correction of inaccurate information.</li>
+        <li>Request deletion or restriction of certain processing.</li>
+        <li>Object to certain processing activities.</li>
+        <li>Withdraw consent where processing relies on consent.</li>
+        <li>Request a copy of eligible information in a portable format.</li>
+        <li>
+          Lodge a complaint with an appropriate privacy or data protection
+          authority.
+        </li>
+      </ul>
+      <p>
+        These rights may be subject to legal exceptions and may apply differently
+        to information held locally, information held by Firebase, and
+        information already submitted to third parties.
+      </p>
+      <p>
+        To make a privacy request, contact
+        <a href="mailto:klinikoapp@gmail.com">klinikoapp@gmail.com</a>. We may
+        need to verify your identity before acting on a request.
+      </p>
+
+      <h2>12. Children's Privacy</h2>
+      <p>
+        Kliniko is not intended for use by children who are not legally permitted
+        to use the service or provide any required consent in their jurisdiction.
+      </p>
+      <p>
+        If you are a parent or legal guardian and believe a child has provided
+        personal information through a feature that processes it, contact
+        <a href="mailto:klinikoapp@gmail.com">klinikoapp@gmail.com</a> so we can
+        review the situation and take appropriate action where required by law.
+      </p>
+      <p>
+        Kliniko is not directed to children, and the minimum age for using the
+        app is determined by the app store's terms and the laws of your
+        jurisdiction.
+      </p>
+
+      <h2>13. International Users and Transfers</h2>
+      <p>
+        Kliniko may be used in countries with different privacy and data
+        protection laws. Third-party services used by the app may process
+        information in locations outside your country of residence.
+      </p>
+      <p>
+        Where required by law, appropriate safeguards or other lawful grounds must
+        apply to international transfers of personal information.
+      </p>
+      <p>
+        Nothing in this policy is intended to remove privacy rights that cannot
+        lawfully be excluded under the law applicable to you.
+      </p>
+
+      <h2>14. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy when the application, its service
+        providers, its data practices, or applicable legal requirements change.
+      </p>
+      <p>
+        The revised policy will display an updated effective date. Where required
+        by applicable law, we will provide notice or obtain consent before
+        implementing a material change.
+      </p>
+
+      <h2>15. Contact Us</h2>
+      <p>
+        For questions, privacy requests, or concerns about this policy, contact:
+      </p>
+      <ul>
+        <li>
+          <strong>Kliniko Privacy Contact</strong><br>
+          Email:
+          <a href="mailto:klinikoapp@gmail.com">klinikoapp@gmail.com</a>
+        </li>
+        <li>
+          Operator: <strong>Kliniko</strong>
+        </li>
+        <li>
+          Postal business address: not published at this time.
+        </li>
+        <li>
+          Website: this privacy policy and the
+          <a href="delete-account.html">account and data deletion instructions</a>.
+        </li>
+      </ul>
+      <p>
+        Please do not include unnecessary medical details when contacting us
+        about a privacy request.
+      </p>
+
+      <footer>
+        <p>
+          Kliniko helps organize health information and reminders. It does not
+          replace professional medical advice. For medical questions, consult
+          a qualified healthcare professional.
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>
