@@ -7,9 +7,11 @@ Static legal documents for the **Kliniko** app, published to GitHub Pages.
 | Home / index | https://senj1u.github.io/Kliniko/ | ✅ `200` |
 | Privacy Policy | https://senj1u.github.io/Kliniko/privacy.html | ✅ `200` |
 | Account & Data Deletion | https://senj1u.github.io/Kliniko/delete-account.html | ✅ `200` |
+| Icon (referenced by both documents) | https://senj1u.github.io/Kliniko/assets/icon.png | ✅ `200` |
 
-All three were verified live on **2026-10-14**: public over HTTPS, no GitHub login required, and the
-served bytes are `sha256`-identical to this repository.
+All four were verified live on **2026-10-15**: public over HTTPS, no GitHub login required, and the
+served bytes are `sha256`-identical to this repository (the three pages plus `assets/icon.png` and
+`assets/style.css`).
 
 ## Contents
 
@@ -17,12 +19,14 @@ served bytes are `sha256`-identical to this repository.
 index.html                                  Landing page linking both legal documents
 privacy.html                                Privacy Policy
 delete-account.html                         Account & Data Deletion instructions
-assets/style.css                            Shared stylesheet (no external requests)
+assets/style.css                            Stylesheet used by index.html (no external requests)
+assets/icon.png                             App icon, used by both legal documents
 .github/workflows/deploy-legal-pages.yml    GitHub Actions workflow that deploys the pages
 ```
 
-All pages are plain, self-contained HTML with a single shared stylesheet — no build step, no
-JavaScript, no third-party requests, and no cookies set by the site itself.
+All pages are plain, self-contained HTML — no build step, no JavaScript, no third-party requests,
+and no cookies set by the site itself. `index.html` uses `assets/style.css`; `privacy.html` and
+`delete-account.html` carry their own inline styles.
 
 ## Deployment
 
@@ -31,19 +35,24 @@ this repository is already configured that way (`build_type: workflow`).
 
 The workflow `.github/workflows/deploy-legal-pages.yml` runs:
 
-* on every push that changes an `*.html` file, `assets/**`, or the workflow file itself;
+* on every push that changes an `*.html` file, `assets/**`, or the workflow file itself — the
+  installed workflow has **no branch filter**, so a push to *any* branch that touches those paths
+  publishes that branch's content to the live site;
 * manually, from **Actions → "Deploy legal pages to GitHub Pages" → Run workflow**
   (`workflow_dispatch`).
 
 It stages the HTML files and `assets/` into `_site/`, uploads that directory with
 `actions/upload-pages-artifact`, and deploys it with `actions/deploy-pages`.
 
-> **Status — installed, deployed and verified (2026-10-14).** The workflow lives at
-> `.github/workflows/deploy-legal-pages.yml` on `main`, and run
-> [38573019171](https://github.com/Senj1u/Kliniko/actions/runs/38573019171) completed with
-> **both the `build` and `deploy` jobs successful**. All four published URLs return `HTTP/2 200`
-> over HTTPS with no authentication, and the published bytes are identical to the repository
-> (`sha256` match). The section below records why this had to be installed by hand.
+> **Status — installed, deployed and verified (2026-10-15).** The workflow lives at
+> `.github/workflows/deploy-legal-pages.yml` on `main`. Run
+> [38573019171](https://github.com/Senj1u/Kliniko/actions/runs/38573019171) installed it on
+> 2026-10-14, and run
+> [38753027807](https://github.com/Senj1u/Kliniko/actions/runs/38753027807) published the corrected
+> privacy policy and account-deletion pages on 2026-10-15. **Both runs completed with both the
+> `build` and `deploy` jobs successful.** All four published URLs return `HTTP/2 200` over HTTPS
+> with no authentication, and the published bytes are identical to the repository (`sha256` match).
+> The section below records why this had to be installed by hand.
 
 ### How the workflow was installed (automation cannot write `.github/workflows/`)
 
@@ -128,9 +137,10 @@ gh run list --repo Senj1u/Kliniko --workflow deploy-legal-pages.yml --limit 5
 curl -sI https://senj1u.github.io/Kliniko/                   | head -1
 curl -sI https://senj1u.github.io/Kliniko/privacy.html        | head -1
 curl -sI https://senj1u.github.io/Kliniko/delete-account.html | head -1
+curl -sI https://senj1u.github.io/Kliniko/assets/icon.png     | head -1
 ```
 
-All three `curl` calls returned `HTTP/2 200` as of 2026-10-14. Treat the URLs as verified only while
+All four `curl` calls returned `HTTP/2 200` as of 2026-10-15. Treat the URLs as verified only while
 that holds — a `404` means the latest deployment failed or has not run yet.
 
 ## Editing the documents
